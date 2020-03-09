@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background: url(images/bg\ with\ multiple\ betta\,\ large\ white\ betta\ as\ center.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main {
+    font-family: 'Nunito', sans-serif;
+
+    /*border: 2px solid blue;*/
+    display: flex;
+    flex-direction: column; /*vert items*/
+    align-items: center; /*horz center qs and q boxes*/ 
+
+  }
+  .currentQuestionAndScore { 
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(31, 54, 90);
+    background-color: aliceblue;
+    /*border: 1px red solid;*/
+    border-radius: 5px;
+
+    width: 650px;
+    height: 50px;
+    margin-top: 75px;
+  
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center; /*horz center's currentQuestion and currentScore inside parent*/
+  }
+  
+  .currentQuestion, .currentScore { 
+    /*border: 1px green solid;*/
+    display: inline-block; /*makes q and score horz and goes along with centering inside parent*/
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .questionBox {
+    font-size: 25px;
+    background-color: aliceblue;
+    /*border: 1px red solid;*/
+    border-radius: 5px;
+
+    width: 650px;
+    height: 200px;
+    margin-top: 50px; /*space away from qandscore box*/
+    margin-bottom: 50px;
+
+    /*centering parent to q, a's, and submit button*/ 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+
+  .questions-answers-submit {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(31, 54, 90);
+
+    /*centering q, a's, and submit button w/in parent*/ 
+    display: flex;
+    flex-direction: column; /*items go top-bottom*/
+    align-items: center; /*vert center items*/
+    justify-content: space-evenly; /*space even throughout items in parent*/
+  }
+
+
+
+  .question {
+    margin-bottom: 15px; /*space bt q and anws*/
+  }
+
+  .submitAnswer { /*submit button looks*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+
+    width: 150px;
+    height: 35px; 
+    display: inline-block;
+
+    border-style: unset;
+    border-radius: 5px;
+
+    background-color: rgb(31, 54, 90);
+  }
+
+  button:hover, button:focus { /*submit button hover effects*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(130, 175, 211);
+    color: rgb(31, 54, 90);
+  }

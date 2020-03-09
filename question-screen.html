@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" type ="A quiz app about betta fish and their care" 
+    <!--inital-scale=1 lets you keep the same zoom-->
+    <title>Betta Fish Quiz</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="question-screen.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+    <main class="main">
+        <section class="currentQuestionAndScore">
+          <ul>
+            <li class="currentQuestion">Question: <span>1</span>/10</li>
+            <li class="currentScore">Score: <span>0</span></li>
+          </ul>
+        </section>
+
+        <section class="questionBox">
+            <form class="questions-answers-submit">
+            <fieldset class="questions-answers">
+              <legend class='question'>What other name do betta fish go by?</legend>
+              <input type="radio" id="answer1" name="answer" value="answer1"><label for="answer1">Alpha Fish</label><br>
+              <input type="radio" id="answer2" name="answer" value="answer2"><label for="answer2">Gamma Fish</label><br>
+              <input type="radio" id="answer3" name="answer" value="answer3"><label for="answer3">Siamese Fighting Fish</label><br>
+              <input type="radio" id="answer4" name="answer" value="answer4"><label for="answer4">Kissing Gouramis</label>
+
+              <!-- <input type='radio' id='answer' name='answer' required><label for='answer1' class='answer'>Alpha Fish</label>
+              <input type='radio' id='answer' name='answer' required><label for='answer2' class='answer'>Gamma Fish</label>
+              <input type='radio' id='answer' name='answer' required><label for='answer3' class='answer'>Siamese Fighting Fish</label>
+              <input type='radio' id='answer' name='answer' required><label for='answer4' class='answer'>Kissing Gouramis</label> -->
+            </fieldset>
+            <button type='submit' class='submitAnswer'>Submit</button>
+            </form>
+          </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

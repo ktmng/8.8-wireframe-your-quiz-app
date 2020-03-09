@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" type ="A quiz app about betta fish and their care" 
+    <!--inital-scale=1 lets you keep the same zoom-->
+    <title>Betta Fish Quiz</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="correct-screen.css" rel="stylesheet" type="text/css"/>
+  </head>
+  
+  <body>
+    <main class="main">
+        <section class="currentQuestionAndScore">
+          <ul>
+            <li class="currentQuestion">Question: <span>1</span>/10</li>
+            <li class="currentScore">Score: <span>1</span></li>
+          </ul>
+        </section>
+
+        <section class="questionBox">
+            <section class='correctAnswer'>
+                <span>That's Correct!</span>
+                <img src="images/betta open mouth.jpg" alt="A betta fish with its open mouth" class="betta-reaction-img">
+                <button class='nextQuestion'>Next Question</button>
+              </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
